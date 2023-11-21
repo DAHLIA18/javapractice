@@ -1,35 +1,28 @@
 import java.util.Scanner;
-import java.util.Calender;
-
 
 public class DateDemo{
-	public static void main(String[] args){
+       public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
 
-	Scanner input = new Scanner(System.in);
+        System.out.print("Enter year: ");
+        int year = input.nextInt();
 
-	System.out.print("Enter a date: ");
-	String date = input.next();
+        System.out.print("Enter month(1-12): ");
+        int month = input.nextInt();
 
-	String[] dateParts = date.split("/");
-	
-	int month = int.parsel(dateParts[]);
-	int day = int.parsel(dateParts[]);
-	int year = int.parsel(dateParts[]);
+        System.out.print("Enter the day of the month(1-31): ");
+        int day = input.nextInt();
 
-	Calender calender = Calender.getInstance();
+        if (month < 3) {
+            month += 12;
+            year--;
+        }
 
-	int dayOfMonth = calender.get(Calender.DayOfMonth);
-	int dayOfWeek = calender.get(Calender.DayOfWeek);
+        int dayOfWeek = (day + 13 * (month + 1) / 5 + year + year / 4 - year / 100 + year / 400) % 7;
 
-	System.out.println("The day of the date" + date + "is" + dayOFMonth); 
-	System.out.println("The day of the week is" + dayOFWeek); 
+        String[] days = {"Saturday", "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday"};
+        String dayName = days[dayOfWeek];
 
-
-
-}
-
-
-
-
-
+        System.out.println("Day of the week is " + dayName);
+    }
 }
