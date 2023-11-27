@@ -12,7 +12,7 @@ public class SquareCube{
         int number1 = 1;
         int square1 = number1 * number1;
         int cube1 = number1 * number1 * number1;
-        System.out.printf("%-10d%-10d%-10d%n", number1, square1, cube1);
+        System.out.printf("%-10d%-10d%-10d%n", number1, square1, cube1); 
 
         int number2 = 2;
         int square2 = number2 * number2;
