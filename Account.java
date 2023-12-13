@@ -1,4 +1,4 @@
-public class Acount{
+public class Account{
    private String name;
    private double balance;
 
@@ -11,7 +11,7 @@ if (balance > 0.0){
 
 }
 
-public void setwithdraw(double withdrawAmount){
+public void withdrawal(double withdrawAmount){
    if (withdrawAmount > balance){
       System.out.print("insufficient fund");
     }
@@ -19,13 +19,13 @@ public void setwithdraw(double withdrawAmount){
 
 }
 public double getBalance(){
-      return.balance;
+      return balance;
  }
 public void setName(String name){
     this.name = name;
  }
 public String getName(){
-   return.name;
+   return name;
  }
 
 }

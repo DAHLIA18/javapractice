@@ -1,0 +1,19 @@
+public class CheckerboardPattern {
+
+    public static void main(String[] args) {
+        for (int row = 1; row <= 8; row++) {
+            for (int col = 1; col <= 5; col++) {
+                if ((row % 4 == 1 || row % 4 == 0) && col % 5 != 0) {
+                    System.out.print("@");
+                } else if ((row % 4 == 2 || row % 4 == 3) && col % 5 != 0) {
+                    System.out.print("$");
+                } else if (row % 4 == 0 && col % 5 == 0) {
+                    System.out.print("#");
+                } else {
+                    System.out.print("&");
+                }
+            }
+            System.out.println();
+        }
+    }
+}
