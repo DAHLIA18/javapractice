@@ -3,8 +3,10 @@ import java.util.Scanner;
 public class PopulationGrowth {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
+
         System.out.print("Enter the current world population: ");
-        double currentPopulation = scanner.nextDouble();
+        double currentPopulation = input.nextDouble();
+
         System.out.print("Enter the annual world population growth rate (in percentage): ");
         double growthRate = input.nextDouble();
 
