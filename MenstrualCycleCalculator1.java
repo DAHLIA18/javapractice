@@ -65,7 +65,7 @@ public class MenstrualCycleCalculator {
         if (age < 18) {
             disclaimer = "Please consult with a healthcare professional for accurate information.";
         } else {
-            disclaimer = "This information is provided as a general guide. Consult with a healthcare professional for personalized advice.";
+            disclaimer = "HI beautiful, this information is provided as a general guide. Consult with a healthcare professional for personalized advice. Thank You ";
         }
     }
 

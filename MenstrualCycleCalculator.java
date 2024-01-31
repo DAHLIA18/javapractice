@@ -74,21 +74,6 @@ public class MenstrualCycleCalculator {
     public static void main(String[] args) {
         MenstrualCycleCalculator calculator = new MenstrualCycleCalculator();
 
-        calculator.setAverageCycleLength(28);
-        calculator.setStartingDate("2024-01-26");
-        calculator.setAge(25);
-        calculator.calculateCycleInformation();
-
-  
-        System.out.println("Next Period Date: " + calculator.getNextPeriodDate());
-        System.out.println("Ovulation Date: " + calculator.getOvulationDate());
-        System.out.println("Safe Period Start: " + calculator.getSafePeriodStart());
-        System.out.println("Safe Period End: " + calculator.getSafePeriodEnd());
-        System.out.println("Disclaimer: " + calculator.getDisclaimer());
-   
-   
-     
-
         Scanner input = new Scanner(System.in);
 
         System.out.print("Enter your average menstrual cycle length (in days): ");
