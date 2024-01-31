@@ -21,8 +21,8 @@ public class Student {
             this.subject2 = subject2;
             this.subject3 = subject3;
             this.total = total;
-            this.average = avg;
-            this.position = pos;
+            this.average = average;
+            this.position = positions;
         }
 
         public String toString(){
@@ -119,10 +119,10 @@ public class Student {
             Student minValue = myStudents.stream().min(Comparator.comparing(Student::getFirstSub)).get();
             System.out.println(minValue.studentName + " Scoring " + minValue.subject1);
 
-            int avgScore = subjectOneTotal / myStudents.size();
+            int averageScore = subjectOneTotal / myStudents.size();
 
             System.out.print("Average score is: ");
-            System.out.println(avgScore);
+            System.out.println(averageScore);
 
             System.out.print("Total score is: ");
             System.out.println(subjectOneTotal);

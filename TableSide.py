@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class TimeTable{
+public class TableSide{
     public static void main(String[] args){
 
 Scanner input = new Scanner(System.in);
@@ -19,7 +19,11 @@ while(count <= 12){
 
 int multiplication = number * count;
 
-System.out.printf("%d x %d = %d%n",(number, count , multiplication) + " \t ");
+      
+   }System.out.println(i + "\t" + (i * i) + "\t" + (i * i * i) + "\t" + (i * i * i * i));
+     
+
+
  count = count + 1;
 }
 

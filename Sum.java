@@ -15,16 +15,18 @@ public class Sum{
 	int thirdNumber = input.nextInt();
 
 	if(firstNumber > secondNumber || firstNumber > thirdNumber){
-	System.out.print(firstNumber)
+	System.out.print(firstNumber);
 	}
 
 	if(secondNumber > firstNumber || secondNumber > thirdNumber){
-	System.out.print(secondNumber)
+	System.out.println(secondNumber);
 	}
 
 	if(thirdNumber > secondNumber || thirdNumber > firstNumber){
-	System.out.print(thridnumber)
+	System.out.println(thridnumber);
 	}
+
+	
 
     }
 

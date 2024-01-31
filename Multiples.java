@@ -22,3 +22,6 @@ public class Multiples{
 
 
 }
+
+System.out.print(number * j + " * ");
+}

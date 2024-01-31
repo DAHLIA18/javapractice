@@ -1,0 +1,38 @@
+I'll start by describing my lovely app's functionality in pseudocode. The app will allow the user to enter their menstrual cycle start date and the average length of their cycle. It will then calculate the estimated dates of their next period and ovulation. 
+
+THE MAIN FUNCTIONALITY OF THIS APP
+- Prompt the user for their menstrual cycle start date.
+- Prompt the user for the average length of their cycle.
+- Calculate the estimated dates of the next period and ovulation.
+- Display these dates to the user.
+
+Imports classes from the java.time package to work with date and time, specifically LocalDate for date manipulation and DateTimeFormatter for parsing and formatting dates.
+
+Declare the beginning of the MenstrualCycleTracker class.
+Declare private instance variables to store the average cycle length, starting date, and calculated next period and ovulation dates.
+
+Using the Set methods to allow the user to set the average cycle length and starting date.
+
+Using the Get methods to retrieve the calculated next period and ovulation dates.
+
+Define the calculateNextPeriodAndOvulation method, responsible for performing the calculations.
+
+Parsing the starting date provided by the user into a LocalDate object using the ISO date format(it is a standardized and machine readable format).
+
+Calculate the start date of the next period by adding the average cycle length to the starting date.
+
+Calculate next period date as a string using the ISO date format and assigns it to the variable.
+
+Calculate the start date of ovulation, assuming it occurs halfway through the cycle.
+
+calculate ovulation date as a string using the ISO date format and assigns it to the variable.
+
+ The main method, where the execution of the program starts.
+
+ Create an instance of the MenstrualCycleTracker class to demonstrate its usage.
+
+Sets the average cycle length and starting date for the user.
+
+ Call the method to perform the calculations.
+
+ Print the calculated next period and ovulation dates to the console.
